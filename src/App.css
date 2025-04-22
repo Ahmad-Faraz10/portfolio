@@ -1,0 +1,225 @@
+:root {
+  --texttitle: #b11f83;
+  --textti: #19ba16;
+  --textsubtitle: #ffffff;
+  --maincolor: #9dcaa5;
+  --darkColor: #282c34;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-radius: 12px;
+  --pinkcolor: #4d89d6;
+  --redcolor: #ba0f17;
+  --font: "Poppins", sans-serif;
+}
+
+.hback {
+  background-color: #282c34;
+}
+.header {
+  border-bottom: 2px solid rgb(214, 209, 209);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  margin-bottom: 10px;
+}
+
+.navhead {
+  color: var(--texttitle);
+  display: flex;
+  background-color: var(--darkColor);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* border-bottom: 2px solid rgb(214, 209, 209);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  margin-bottom: 20px; */
+}
+.navendgroup {
+  display: flex;
+  gap: 10px;
+}
+.navhead .navitem:first-child {
+  margin-right: auto;
+}
+.navitem {
+  padding: 0px 20px;
+  /* background-color: #007bff; */
+  /* color: var(--texttitle); */
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.navitem:hover {
+  color: #b36199;
+}
+
+/* .card-container {
+  background-color: var(--maincolor);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 100px;
+  padding-left: 40px;
+  height: 300px;
+}
+.text-title {
+  color: var(--texttitle);
+}
+.text-subtitle {
+  padding-top: 20px;
+  padding-right: 300px;
+  font-size: 20px;
+} */
+.cards {
+  border: 12px var(--textti);
+  border-radius: 5px;
+  padding: 20px;
+  /* background-color: white; */
+  box-shadow: 0 4px 12px var(--textti);
+
+  margin-bottom: 30px;
+}
+.card-container {
+  /* background-color: var(--maincolor); */
+  font-family: var(--font-family);
+  padding: 40px;
+  height: 300px;
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 12px var(--texttitle);
+  margin: 0px 0;
+}
+
+/* Title */
+.text-title {
+  color: var(--textti);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Subtitle / Description */
+.text-subtitle {
+  color: var(--textsubtitle);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Responsive image styling */
+img {
+  border-radius: 12px;
+  object-fit: conver;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsive grid fixes if needed */
+@media (max-width: 992px) {
+  .card-container {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .text-subtitle {
+    padding-right: 0;
+    max-width: 100%;
+    font-size: 10px;
+  }
+
+  img {
+    margin-top: 20px;
+  }
+
+  .profileimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* or padding-top */
+    text-align: center;
+  }
+}
+
+/* .project-container {
+}
+.project-title {
+  background-color: #9dcaa5;
+}
+.project-title::before,
+.project-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #c72020; 
+  max-width: 200px;
+}
+
+.project-title::before {
+  margin-right: 20px;
+}
+
+.project-title::after {
+  margin-left: 20px;
+} */
+
+.project-container {
+  margin: 50px 0;
+}
+
+.text-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--texttitle);
+  position: relative;
+}
+
+/* Lines */
+.project-title::before,
+.project-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #28a745; /* or any color you like */
+  max-width: 150px;
+}
+.Skill-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 10px; */
+  /* padding: 20px; */
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 12px var(--texttitle);
+  margin: 0px 0;
+  padding: 50px;
+}
+.skill-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .skill-image {
+    flex: 0 0 calc(100% / 6 - 20px); /* 6 per row, minus gap */
+  }
+}
+
+/* Stack better on small screens */
+@media (max-width: 767px) {
+  .skill-image {
+    flex: 0 0 calc(33.33% - 20px); /* 3 per row on smaller devices */
+  }
+}
