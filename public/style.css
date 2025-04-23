@@ -30,10 +30,10 @@
   align-items: center;
   padding: 20px;
   /* border-bottom: 2px solid rgb(214, 209, 209);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  margin-bottom: 20px; */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 20px; */
 }
 .navendgroup {
   display: flex;
@@ -60,20 +60,20 @@
 }
 
 /* .card-container {
-  background-color: var(--maincolor);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding-top: 100px;
-  padding-left: 40px;
-  height: 300px;
-}
-.text-title {
-  color: var(--texttitle);
-}
-.text-subtitle {
-  padding-top: 20px;
-  padding-right: 300px;
-  font-size: 20px;
-} */
+    background-color: var(--maincolor);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding-top: 100px;
+    padding-left: 40px;
+    height: 300px;
+  }
+  .text-title {
+    color: var(--texttitle);
+  }
+  .text-subtitle {
+    padding-top: 20px;
+    padding-right: 300px;
+    font-size: 20px;
+  } */
 .cards {
   border: 12px var(--textti);
   border-radius: 5px;
@@ -146,26 +146,26 @@ img {
 }
 
 /* .project-container {
-}
-.project-title {
-  background-color: #9dcaa5;
-}
-.project-title::before,
-.project-title::after {
-  content: "";
-  flex: 1;
-  height: 2px;
-  background-color: #c72020; 
-  max-width: 200px;
-}
-
-.project-title::before {
-  margin-right: 20px;
-}
-
-.project-title::after {
-  margin-left: 20px;
-} */
+  }
+  .project-title {
+    background-color: #9dcaa5;
+  }
+  .project-title::before,
+  .project-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #c72020; 
+    max-width: 200px;
+  }
+  
+  .project-title::before {
+    margin-right: 20px;
+  }
+  
+  .project-title::after {
+    margin-left: 20px;
+  } */
 
 .project-container {
   margin: 50px 0;
@@ -198,8 +198,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 10px; */
-  /* padding: 20px; */
+
   border-radius: var(--card-radius);
   box-shadow: 0 4px 12px var(--texttitle);
   margin: 0px 0;
@@ -213,13 +212,13 @@ img {
 }
 @media (min-width: 768px) {
   .skill-image {
-    flex: 0 0 calc(100% / 6 - 20px); /* 6 per row, minus gap */
+    flex: 0 0 calc(100% / 6 - 20px);
   }
 }
 
 /* Stack better on small screens */
 @media (max-width: 767px) {
   .skill-image {
-    flex: 0 0 calc(33.33% - 20px); /* 3 per row on smaller devices */
+    flex: 0 0 calc(33.33% - 20px);
   }
 }

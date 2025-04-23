@@ -1,4 +1,3 @@
-import "./App.css";
 import Card from "./Card";
 import Header from "./Header";
 import Projects from "./Projects";
