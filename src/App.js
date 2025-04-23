@@ -1,4 +1,6 @@
 import Card from "./Card";
+import Experience from "./Experience";
+import Footer from "./Footer";
 import Header from "./Header";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -10,6 +12,8 @@ function App() {
         <Card />
         <Skills />
         <Projects />
+        <Experience />
+        <Footer />
       </div>
     </div>
   );
