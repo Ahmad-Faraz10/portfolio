@@ -6,7 +6,7 @@
   --darkColor: #282c34;
   --card-shadow: rgba(0, 0, 0, 0.1);
   --card-radius: 12px;
-  --pinkcolor: #4d89d6;
+  --pinkcolor: #2910e4;
   --redcolor: #ba0f17;
   --font: "Poppins", sans-serif;
 }
@@ -102,7 +102,18 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-
+.text-sectitle {
+  color: var(--texttitle);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.text-thirdtitle {
+  color: var(--pinkcolor);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 /* Subtitle / Description */
 .text-subtitle {
   color: var(--textsubtitle);
@@ -196,6 +207,22 @@ img {
   background-color: #28a745; /* or any color you like */
   max-width: 150px;
 }
+.pro-card {
+  background-color: aqua;
+  max-width: 500px;
+  max-height: 400px;
+  border: 12px var(--textti);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 12px var(--textti);
+  margin: 30px;
+}
+.link {
+  right: 20px;
+  top: 20px;
+  background-color: #ba0f17;
+}
+
 .Skill-card {
   display: flex;
   flex-wrap: wrap;

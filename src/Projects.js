@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+import { Center, Image } from "@chakra-ui/react";
 const Projects = () => {
   return (
     <div className="container">
@@ -10,12 +10,23 @@ const Projects = () => {
           <div className="col-lg-6 col-sm-12 col-md-12">
             <div className="pro-card">
               <Image
-                src="../img/pic.jpg"
+                src="../img/wall.jpg"
                 alt="Profile Pic"
-                width="300px"
-                height="300px"
+                // objectFit={"contain"}
+                className="skill-image"
+                // justifyContent={Center}
+                width="600px"
+                height="200px"
                 style={{ borderRadius: "12px" }}
               />
+              <p className="text-title">Pathfinding</p>
+              <p className="text-subtitle">
+                I am applying for job of full stack developer (Mern Stack
+                Developer
+              </p>
+              <div className="link">
+                <Image src="../img/pic.jpg" width="20px" height="20px" />
+              </div>
             </div>
           </div>{" "}
           <div className="col-lg-6 col-sm-12 col-md-12">
