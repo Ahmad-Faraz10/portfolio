@@ -6,7 +6,10 @@ const Header = () => {
       <div className="navhead ">
         <div className="navitem"> Ahmad</div>
         <div className="navendgroup">
-          <div className="navitem"> Home</div>
+          <div className="navitem">
+            {" "}
+            <i className="fa fa-home"></i> Home
+          </div>
           <div className="navitem"> project</div>
           <div className="navitem">
             <a
@@ -15,7 +18,7 @@ const Header = () => {
               rel="noopener noreferrer"
             >
               Resume
-              <EditIcon fontSize="20px" />
+              <EditIcon fontSize="20px" color={"#19ba16"} />
             </a>
           </div>
         </div>

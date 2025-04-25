@@ -1,5 +1,5 @@
 import { SiGmail } from "react-icons/si";
-import { FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
           <SiGmail color="#ff4343" size="2em" className="footitem" />
         </a>
         <a href="https://twitter.com/ahmad-faraz" target="_blank">
-          <FaTwitter color="#1DA1F2" size="2em" className="footitem" />
+          <FaWhatsapp color="#25D366" size="2em" className="footitem" />
         </a>
         <a
           href="https://www.linkedin.com/in/ahmad-faraz-46375b163/"

@@ -9,7 +9,9 @@ import sql from "./img/MySQL.svg";
 import bst from "./img/Bootstrap.svg";
 import R from "./img/R.svg";
 import Fapi from "./img/FastAPI.svg";
-import html from "./img/Python.svg";
+import p from "./img/Python.svg";
+import html from "./img/html.svg";
+import css from "./img/css.svg";
 const Skills = () => {
   return (
     <div className="container">
@@ -24,10 +26,12 @@ const Skills = () => {
           <Image src={ex} alt="..." className="skill-image" />{" "}
           <Image src={node} alt="Profile Pic" className="skill-image" />
           <Image src={mdb} alt="Profile Pic" className="skill-image" />{" "}
+          <Image src={html} alt="Profile Pic" className="skill-image" />{" "}
+          <Image src={css} alt="Profile Pic" className="skill-image" />{" "}
           <Image src={bst} alt="Profile Pic" className="skill-image" />
           <Image src={R} alt="Profile Pic" className="skill-image" />{" "}
           <Image src={Fapi} alt="Profile Pic" className="skill-image" />
-          <Image src={html} alt="Profile Pic" className="skill-image" />{" "}
+          <Image src={p} alt="Profile Pic" className="skill-image" />{" "}
         </div>
       </div>
     </div>

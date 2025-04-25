@@ -1,4 +1,6 @@
-import { Center, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
+import { AiFillGithub } from "react-icons/ai";
+import { FaExternalLinkAlt } from "react-icons/fa";
 const Projects = () => {
   return (
     <div className="container">
@@ -9,57 +11,64 @@ const Projects = () => {
         <div className="row">
           <div className="col-lg-6 col-sm-12 col-md-12">
             <div className="pro-card">
-              <Image
-                src="../img/wall.jpg"
-                alt="Profile Pic"
-                // objectFit={"contain"}
-                className="skill-image"
-                // justifyContent={Center}
-                width="600px"
-                height="200px"
-                style={{ borderRadius: "12px" }}
-              />
-              <p className="text-title">Pathfinding</p>
-              <p className="text-subtitle">
-                I am applying for job of full stack developer (Mern Stack
-                Developer
-              </p>
-              <div className="link">
-                <Image src="../img/pic.jpg" width="20px" height="20px" />
+              <div className="pimage-container">
+                <Image
+                  src="../img/obb.png"
+                  alt="Profile Pic"
+                  className="pro-image"
+                  fill
+                />{" "}
+                <a href="">
+                  {" "}
+                  <div className="link">
+                    <AiFillGithub color="#b11f83" size="2em" />
+                  </div>{" "}
+                </a>
+                <a href="https://onebigbit.com/">
+                  {" "}
+                  <div className="link1">
+                    <FaExternalLinkAlt color="#b11f83" size="1.7em" />
+                  </div>{" "}
+                </a>
               </div>
+              <p className="pro-title">One Big Bit</p>
+              <p className="pro-sub">
+                Developed a responsive company website using ReactJS and
+                Bootstrap to highlight skills, completed projects, and work
+                experience. Features include smooth navigation, a portfolio
+                section, and a modern, clean UI.
+              </p>
             </div>
-          </div>{" "}
+          </div>
           <div className="col-lg-6 col-sm-12 col-md-12">
             <div className="pro-card">
-              <Image
-                src="../img/pic.jpg"
-                alt="Profile Pic"
-                width="300px"
-                height="300px"
-                style={{ borderRadius: "12px" }}
-              />
-            </div>
-          </div>{" "}
-          <div className="col-lg-6 col-sm-12 col-md-12">
-            <div className="pro-card">
-              <Image
-                src="../img/pic.jpg"
-                alt="Profile Pic"
-                width="300px"
-                height="300px"
-                style={{ borderRadius: "12px" }}
-              />
-            </div>
-          </div>{" "}
-          <div className="col-lg-6 col-sm-12 col-md-12">
-            <div className="pro-card">
-              <Image
-                src="../img/pic.jpg"
-                alt="Profile Pic"
-                width="300px"
-                height="300px"
-                style={{ borderRadius: "12px" }}
-              />
+              <div className="pimage-container">
+                <Image
+                  src="../img/pv.png"
+                  alt="Profile Pic"
+                  className="pro-image"
+                  fill
+                />{" "}
+                <a href="https://github.com/Ahmad-Faraz10/pathfindervisualizer">
+                  {" "}
+                  <div className="link">
+                    <AiFillGithub color="#b11f83" size="2em" />
+                  </div>{" "}
+                </a>
+                <a href="https://pathfindervisualiz.netlify.app/">
+                  {" "}
+                  <div className="link1">
+                    <FaExternalLinkAlt color="#b11f83" size="1.7em" />
+                  </div>{" "}
+                </a>
+              </div>
+              <p className="pro-title">PathFinding Visualizer</p>
+              <p className="pro-sub">
+                Path finding algorithms build on top of graph search algorithms
+                and explore routes between nodes, starting at one node and
+                traversing through relationships until the destination has been
+                reached.
+              </p>
             </div>
           </div>
         </div>

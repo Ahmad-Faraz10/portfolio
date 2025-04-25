@@ -8,6 +8,7 @@
   --card-radius: 12px;
   --pinkcolor: #2910e4;
   --redcolor: #ba0f17;
+  --yellowcolor: #fff203;
   --font: "Poppins", sans-serif;
 }
 
@@ -80,9 +81,7 @@
   border: 12px var(--textti);
   border-radius: 5px;
   padding: 20px;
-  /* background-color: white; */
   box-shadow: 0 4px 12px var(--textti);
-
   margin-bottom: 30px;
 }
 .card-container {
@@ -102,9 +101,17 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
+.card-title {
+  color: var(--textti);
+  font-size: 26px;
+  margin-left: 80px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .text-sectitle {
   color: var(--texttitle);
-  font-size: 32px;
+  font-size: 16px;
+  margin-left: 80px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -120,6 +127,8 @@
   font-size: 16px;
   line-height: 1.6;
   max-width: 500px;
+  padding-left: 80px;
+  padding-right: 10px;
 }
 
 /* Responsive image styling */
@@ -155,6 +164,9 @@ img {
     align-items: center;
     margin-top: 30px; /* or padding-top */
     text-align: center;
+  }
+  .navitem {
+    font-size: 16px;
   }
 }
 
@@ -207,20 +219,90 @@ img {
   background-color: #28a745; /* or any color you like */
   max-width: 150px;
 }
-.pro-card {
+/* .pro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: aqua;
-  max-width: 500px;
-  max-height: 400px;
+  width: 100%;
+  max-width: 600px;
   border: 12px var(--textti);
   border-radius: 5px;
-  padding: 20px;
   box-shadow: 0 4px 12px var(--textti);
   margin: 30px;
+  padding: 20px;
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+}
+.skill-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+} */
+.pro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--textti);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--textti);
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.pimage-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  height: 250px;
+
+  padding: -220px; /* Add padding around the image */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.pro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px 12px 0 0;
+}
+
+.link,
+.link1 {
+  position: absolute;
+  top: 15px;
+}
+
 .link {
   right: 20px;
-  top: 20px;
-  background-color: #ba0f17;
+}
+
+.link1 {
+  right: 60px;
+}
+.pro-title {
+  color: var(--yellowcolor);
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.pro-sub {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 22px;
+  padding-right: 20px;
 }
 
 .Skill-card {
@@ -229,15 +311,22 @@ img {
   justify-content: center;
   border-radius: var(--card-radius);
   box-shadow: 0 4px 12px var(--texttitle);
-  margin: 0px 0;
+  margin: 0;
   padding: 50px;
 }
+
 .skill-image {
   width: 100px;
   height: 100px;
   object-fit: contain;
   padding: 20px;
+  transition: transform 0.3s ease; /* Smooth effect */
 }
+
+.skill-image:hover {
+  transform: scaleX(-1);
+}
+
 @media (min-width: 768px) {
   .skill-image {
     flex: 0 0 calc(100% / 6 - 20px);
@@ -250,16 +339,40 @@ img {
     flex: 0 0 calc(33.33% - 20px);
   }
 }
-
+.Exp-container {
+  margin-bottom: 30px;
+}
 .ex-card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+  flex-direction: column;
+  padding: 30px;
   border-radius: var(--card-radius);
   box-shadow: 0 4px 12px var(--texttitle);
-  margin: 0px 0;
-  padding: 50px;
+
+  gap: 10px; /* adds space between elements */
 }
+
+.ex-head {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--texttitle);
+}
+
+.ex-sub {
+  font-size: 12px;
+  color: var(--textti);
+}
+
+.ex-subtitle li {
+  margin-bottom: 5px;
+  color: #dccfcf;
+}
+
+.ex-desc {
+  margin-top: 10px;
+  font-style: italic;
+}
+
 .footer {
   border-top: 2px solid rgb(214, 209, 209);
   /* box-shadow: 0px 4px 4px var(--texttitle); */
@@ -267,7 +380,6 @@ img {
 .navfoot {
   color: var(--texttitle);
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   padding: 20px;

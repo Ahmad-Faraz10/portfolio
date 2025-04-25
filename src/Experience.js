@@ -6,11 +6,13 @@ const Experience = () => {
           <h1 className="project-title">Experience</h1>
         </div>
         <div className="ex-card col-sm-12 ">
-          <h1 className="text-title">Software Developer</h1>
-          <h3 className="text-sectitle">OBB</h3>
-          <span>Lucknow U.P.</span>
-          <h6>(Oct. 2023 to Nov 2024)</h6>
-          <ul className="text-subtitle">
+          <h1 className="ex-head">Software Developer</h1>
+          <h3 className="ex-sub">
+            OBB <span className="text-white">Lucknow U.P.</span>
+          </h3>
+
+          <h6 className=" text-white">(Oct. 2023 to Nov 2024)</h6>
+          <ul className="ex-subtitle">
             <li>
               Developed full-stack web applications using the MERN stack.{" "}
             </li>
@@ -20,7 +22,6 @@ const Experience = () => {
               software products.{" "}
             </li>
           </ul>
-          <p>Ds</p>
         </div>
       </div>
     </div>
