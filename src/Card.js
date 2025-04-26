@@ -1,6 +1,13 @@
 import { Image } from "@chakra-ui/react";
 
 const Card = () => {
+  const text = `
+  CS Postgrad passionate about Web Dev and Data Science! Love to 
+  solve problems using skills.<br />
+  Design different themes of pages.<br />
+  Enjoy building scalable backends using Node and Express + AWS Lambda.<br />
+  Focus on code quality over quantity 💪
+`;
   return (
     <div className="container cards">
       <div className="row ">
@@ -8,12 +15,11 @@ const Card = () => {
           <div className="card-container ">
             <h1 className="card-title">Ahmad Faraz </h1>
             <h5 className="text-sectitle">Graduate, Full Stack Developer,</h5>
-            <p className="text-subtitle">
-              CS Postgrad passionate about Web Dev and Data Science! Love to
-              solve problems using skills . Design diffrent themeof pages .
-              Enjoy building scalable backends using Node and Express + AWS
-              Lambda Focus on code quality over quantity 💪
-            </p>
+            <p
+              className="text-subtitle"
+              contentEditable="true"
+              dangerouslySetInnerHTML={{ __html: text }}
+            ></p>
           </div>
         </div>
 
