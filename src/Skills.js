@@ -29,6 +29,7 @@ const Skills = () => {
           <Image src={html} alt="Profile Pic" className="skill-image" />{" "}
           <Image src={css} alt="Profile Pic" className="skill-image" />{" "}
           <Image src={bst} alt="Profile Pic" className="skill-image" />
+          <Image src={sql} alt="Profile Pic" className="skill-image" />
           <Image src={R} alt="Profile Pic" className="skill-image" />{" "}
           <Image src={Fapi} alt="Profile Pic" className="skill-image" />
           <Image src={p} alt="Profile Pic" className="skill-image" />{" "}
