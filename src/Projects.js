@@ -18,13 +18,21 @@ const Projects = () => {
                   className="pro-image"
                   fill
                 />{" "}
-                <a href="">
+                <a
+                  href="https://onebigbit.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {" "}
                   <div className="link">
                     <AiFillGithub color="#b11f83" size="2em" />
                   </div>{" "}
                 </a>
-                <a href="https://onebigbit.com/">
+                <a
+                  href="https://onebigbit.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {" "}
                   <div className="link1">
                     <FaExternalLinkAlt color="#b11f83" size="1.7em" />
@@ -49,13 +57,21 @@ const Projects = () => {
                   className="pro-image"
                   fill
                 />{" "}
-                <a href="https://github.com/Ahmad-Faraz10/pathfindervisualizer">
+                <a
+                  href="https://github.com/Ahmad-Faraz10/pathfindervisualizer"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {" "}
                   <div className="link">
                     <AiFillGithub color="#b11f83" size="2em" />
                   </div>{" "}
                 </a>
-                <a href="https://pathfindervisualiz.netlify.app/">
+                <a
+                  href="https://pathfindervisualiz.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {" "}
                   <div className="link1">
                     <FaExternalLinkAlt color="#b11f83" size="1.7em" />
