@@ -87,6 +87,45 @@ const Projects = () => {
               </p>
             </div>
           </div>
+          <div className="col-lg-6 col-sm-12 col-md-12">
+            <div className="pro-card">
+              <div className="pimage-container">
+                <Image
+                  src="../img/port.png"
+                  alt="Profile Pic"
+                  className="pro-image"
+                  fill
+                />{" "}
+                <a
+                  href="https://github.com/Ahmad-Faraz10/portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <div className="link">
+                    <AiFillGithub color="#b11f83" size="2em" />
+                  </div>{" "}
+                </a>
+                <a
+                  href="https://farazansar.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <div className="link1">
+                    <FaExternalLinkAlt color="#b11f83" size="1.7em" />
+                  </div>{" "}
+                </a>
+              </div>
+              <p className="pro-title">Portfolio</p>
+              <p className="pro-sub">
+                Path finding algorithms build on top of graph search algorithms
+                and explore routes between nodes, starting at one node and
+                traversing through relationships until the destination has been
+                reached.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
