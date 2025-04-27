@@ -119,10 +119,8 @@ const Projects = () => {
               </div>
               <p className="pro-title">Portfolio</p>
               <p className="pro-sub">
-                Path finding algorithms build on top of graph search algorithms
-                and explore routes between nodes, starting at one node and
-                traversing through relationships until the destination has been
-                reached.
+                Developed a portofolio to showcase skills, projects and
+                experiences using React.js and Bootstrap CSS.
               </p>
             </div>
           </div>

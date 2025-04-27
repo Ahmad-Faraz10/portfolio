@@ -43,13 +43,13 @@
 }
 .navhead .navitem:first-child {
   margin-right: auto;
-  /* color: var(--textti); */
+  color: var(--textti);
 }
 .navitem {
   padding: 0px 20px;
   /* background-color: #007bff; */
   color: var(--texttitle);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;

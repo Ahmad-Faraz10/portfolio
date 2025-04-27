@@ -5,7 +5,7 @@ const Card = () => {
   CS Postgrad passionate about Web Dev and Data Science! Love to 
   solve problems using skills.<br />
   Design different themes of pages.<br />
-  Enjoy building scalable backends using Node and Express + AWS Lambda.<br />
+  Enjoy building scalable backends using Node and Express<br />
   Focus on code quality over quantity 💪
 `;
   return (
