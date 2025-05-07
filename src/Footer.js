@@ -13,11 +13,7 @@ const Footer = () => {
         >
           <SiGmail color="#ff4343" size="2em" className="footitem" />
         </a>
-        <a
-          href="https://twitter.com/ahmad-faraz"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="tel:+91-9120752782" target="_blank" rel="noreferrer">
           <FaWhatsapp color="#25D366" size="2em" className="footitem" />
         </a>
         <a
