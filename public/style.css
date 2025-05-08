@@ -15,6 +15,51 @@
 .hback {
   background-color: #282c34;
 }
+.container {
+  overflow: visible; /* ensure children can overflow */
+  position: relative; /* helps sticky to calculate */
+}
+
+.star_icon {
+  position: absolute;
+  top: 20px;
+  right: 10px; /* Pushes it outside the container */
+  z-index: 999;
+  /* background-color: var(--textti);
+  color: white; */
+  border: none;
+  padding: 10px;
+  border-radius: 90%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  border: 2px solid var(--texttitle);
+  animation: colorShift 2s infinite;
+  cursor: pointer;
+}
+@keyframes colorShift {
+  0% {
+    background-color: var(--textti);
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: var(--textti);
+  }
+  100% {
+    background-color: var(--textti);
+    color: white;
+  }
+}
+
+.star_icon:hover {
+  background-color: white;
+  color: var(--textti);
+}
+.star_icon:focus {
+  background-color: var(--texttitle);
+  color: var(--textti);
+}
+
 .header {
   border-bottom: 2px solid rgb(214, 209, 209);
   position: sticky;
@@ -31,11 +76,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* border-bottom: 2px solid rgb(214, 209, 209);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    margin-bottom: 20px; */
 }
 .navendgroup {
   display: flex;
@@ -47,13 +87,12 @@
 }
 .navitem {
   padding: 0px 20px;
-  /* background-color: #007bff; */
   color: var(--texttitle);
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  min-width: 100px;
+  min-width: 70px;
   text-align: center;
   transition: background-color 0.3s ease;
 }
@@ -61,22 +100,44 @@
 .navitem:hover {
   color: #b36199;
 }
+@media (max-width: 768px) {
+  .header {
+    border-bottom: 2px solid rgb(214, 209, 209);
+    position: relative;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 4px var(--texttitle);
+  }
+  .navhead {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+  }
 
-/* .card-container {
-    background-color: var(--maincolor);
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    padding-top: 100px;
-    padding-left: 40px;
-    height: 300px;
+  .navendgroup {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
   }
-  .text-title {
-    color: var(--texttitle);
+
+  .navitem {
+    width: auto;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
   }
-  .text-subtitle {
-    padding-top: 20px;
-    padding-right: 300px;
-    font-size: 20px;
-  } */
+
+  .navhead .navitem:first-child {
+    margin: 0 0 10px 0;
+  }
+}
+
 .cards {
   border: 12px var(--textti);
   border-radius: 5px;
@@ -85,9 +146,12 @@
   margin-bottom: 30px;
 }
 .card-container {
-  /* background-color: var(--maincolor); */
+  align-items: center;
+  align-content: center;
+  /* justify-content: center;
+  justify-items: center; */
   font-family: var(--font-family);
-  padding: 40px;
+  padding: 0px;
   height: 300px;
   border-radius: var(--card-radius);
   box-shadow: 0 4px 12px var(--texttitle);
@@ -130,7 +194,6 @@
   padding-left: 80px;
   padding-right: 10px;
 }
-
 /* Responsive image styling */
 img {
   border-radius: 12px;
@@ -139,25 +202,21 @@ img {
   max-width: 300px;
   height: auto;
 }
-
 /* Responsive grid fixes if needed */
 @media (max-width: 992px) {
   .card-container {
-    padding: 30px 20px;
-    text-align: center;
+    /* padding: 30px 20px; */
+    /* text-align: center; */
     font-size: 16px;
   }
-
   .text-subtitle {
     padding-right: 0;
     max-width: 100%;
     font-size: 10px;
   }
-
   img {
     margin-top: 20px;
   }
-
   .profileimage {
     display: flex;
     justify-content: center;
@@ -382,11 +441,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 .footitem {
   cursor: pointer;
-  min-width: 100px;
+  min-width: 50px;
   text-align: center;
   transition: background-color 0.3s ease;
 }
